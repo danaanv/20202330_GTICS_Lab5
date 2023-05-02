@@ -29,7 +29,7 @@ public class EmployeeController {
         this.departmentRepository = departmentRepository;
     }
 
-    @GetMapping("/")
+    @GetMapping({"/",""})
     public String listarEmpleados(Model model){
         model.addAttribute("listaEmpleados",employeeRepository.listarEnables());
         return "employee/listarEmpleados";
