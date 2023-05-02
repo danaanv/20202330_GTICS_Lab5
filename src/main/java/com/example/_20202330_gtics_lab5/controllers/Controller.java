@@ -5,9 +5,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @org.springframework.stereotype.Controller
 public class Controller {
 
-    @GetMapping("/")
+    @GetMapping("/principal")
     public String principal(){
-        return "navbar";
+        return "muestra_P1";
     }
     // Esto es solo para que se corriera y ya:)
 }
